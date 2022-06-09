@@ -7,6 +7,15 @@
 		<link rel="icon" href="img/Logo 01 Artboard 3.png" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ttc0kaj.css" />
+		<style>
+			body {
+				background-image: url("img/bg-1.jpg"), url("img/bg-3.jpg");
+				background-size: auto 1080px, auto 1000px;
+				background-repeat: no-repeat, no-repeat;
+				/* background-attachment: fixed; */
+				background-position: top, bottom;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -21,7 +30,7 @@
 						</ul>
 					</nav>
 				</div>
-				<section>
+				<section id="home">
 					<h1>Hello, my name is</h1>
 					<h2>
 						<span style="color: #d80032">K</span>atherine
@@ -30,26 +39,37 @@
 				</section>
 			</section>
 
-			<section id="about-section">
-				<p class="less-large">About me...</p>
-				<p class="small-text">
-					I am a 25 at Dartmouth College interested in Physics and Computer
-					Science. I am a research intern in the Lynch Rocket Lab, a member of
-					TAMID Tech Track, and a part of Women in CS. In my free time, I enjoy
-					photography & photo editing, skiing, and longboarding. Feel free to
-					contact me below!
-				</p>
+			<section id="about-section" class="black-bg">
+				<p class="less-large" style="color: white; border: 0px">About me...</p>
+				<!-- <div class="black-bg"> -->
+				<div>
+					<p class="small-text">
+						I am a 25 at Dartmouth College interested in Physics and Computer
+						Science. I am a research intern in the Lynch Rocket Lab, a member of
+						TAMID Tech Track, and a part of Women in CS. In my free time, I
+						enjoy photography & photo editing, skiing, and longboarding. Feel
+						free to contact me below!
+					</p>
+				</div>
 			</section>
 
 			<section id="contact-me">
 				<p class="less-large">Contact Me</p>
-				<p class="small-text">
-					I am a 25 at Dartmouth College interested in Physics and Computer
-					Science. I am a research intern in the Lynch Rocket Lab, a member of
-					TAMID Tech Track, and a part of Women in CS. In my free time, I enjoy
-					photography & photo editing, skiing, and longboarding. Feel free to
-					contact me below!
-				</p>
+				<div class="contactlist">
+					<li class="item" id="email">
+						<a
+							href="https://mail.google.com/?view=cm&fs=1&to=katherine.l.pommerening.25@dartmouth.edu"
+						>
+							Email
+						</a>
+					</li>
+					<li class="item" id="github">
+						<a href="https://github.com/kpomm"> Github </a>
+					</li>
+					<li class="item" id="linkedin">
+						<a href="https://www.linkedin.com/in/klpommerening/"> LinkedIn </a>
+					</li>
+				</div>
 			</section>
 		</main>
 		<footer>

@@ -5,7 +5,18 @@
 html {
 	font-size: 100%;
 	font-family: proxima-nova, sans-serif;
+	min-height: 100%;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.black-bg {
+	width: cover;
+	height: 900px;
+	margin: 0 -9999rem;
+	/* add back negative margin value */
+	padding: 0.25rem 9999rem;
+	background-color: black;
 }
 
 section {
@@ -27,6 +38,12 @@ h1 {
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
+}
+
+.about-section {
+	width: 100%;
+	height: auto;
+	background-color: black;
 }
 
 p {
@@ -83,6 +100,10 @@ div {
 	text-align: center;
 }
 
+section .about-section {
+	background-color: black;
+}
+
 #nav {
 	border: 0px;
 	margin: 0px;
@@ -118,10 +139,10 @@ li a:hover {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 24px;
-	max-width: 900px;
-	text-align: center;
-	margin: auto;
-	margin-top: 0px;
+	color: white;
+	max-width: 800px;
+	text-align: left;
+	padding: 100px;
 }
 
 .button a {
@@ -158,4 +179,37 @@ li a:hover {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.contactlist {
+	width: 400px;
+	height: 300px;
+	justify-content: center;
+	background-color: white;
+	border: 10px solid #2b2d42;
+	margin: auto;
+	padding: 30px;
+}
+
+.contactlist a::before {
+	padding-right: 10px;
+	font-family: "FontAwesome";
+}
+
+.item {
+	text-align: left;
+	color: #2b2d42;
+	padding-top: 5px;
+	text-decoration: none;
+	list-style: none;
+}
+
+#email a::before {
+	font-family: "FontAwesome";
+	content: "\f0e0";
+}
+
+#github a::before {
+	font-family: "FontAwesome";
+	content: "\f09b";
 }
